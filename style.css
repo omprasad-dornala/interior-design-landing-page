@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto' 'sans-serif';
+}
+
+body{
+   
+    background: url("./img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* background-attachment: fixed; */
+    
+
+}
+.container{
+    width: 100%;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+    margin: 0em 3em;
+}
+.nav-items{
+display: flex;
+justify-content: space-between;
+margin-left: 8em;
+
+
+}
+.nav-menu-icon{
+    display: none;
+}
+
+.nav-item{
+    margin-left: 3em;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-rigth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.call{
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-top: 5px;
+    
+}
+.phone-logo{
+    margin-top: 30px;
+}
+
+.hr-line{
+
+    position: absolute;
+    border-bottom: #ffffff;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-top: 7em;
+    right: 0;
+    width: 70em;
+    
+}
+.hero-section{
+    display: flex;
+    
+    font-family: 'Roboto';
+}
+
+.section1{
+    
+    display: flex;
+    justify-content: space-between;
+flex-direction: column;
+
+    color: #fff;
+    margin-top: 10em;
+    margin-left: 5em;
+    width: 60em;
+}
+
+.section1 >h1 {
+    font-size: 100px;
+    
+}
+.btn-learnMore{
+    padding: 20px 30px;
+    font-size: 30px;
+    margin-top: 3em;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    border-radius: 50px;
+    width: 6.5em;
+    align-items: center;
+    margin-bottom: 8em;
+}
+
+.section2{
+    display: flex;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card1{
+    background-color: rgb(255, 255, 255, 0.2);
+    /* opacity: 0.2; */
+    width: 20em;
+    height: 10em;
+    position: absolute;
+    margin-top: 4em;
+    margin-left: 2em;
+    
+}
+.puzzleline{
+    position: absolute;
+    border-right: #ffffff;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-top: 6px;
+    margin-left: 15em;
+    height: 4em;
+
+}
+
+.puzzlecircle{
+    position: absolute;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 4em;
+    margin-left: 14.65em;
+    
+}
+.puzzle{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+   font-size: 2em;
+   padding: 10px 20px;
+   margin-top: 1em;
+   margin-left: 1em;
+   width: 2em;
+   border-radius: 40px;
+}
+.text{
+    color: #ffffff;
+    margin: 1em 2em;
+
+}
+.card2{
+    background-color: rgb(255, 255, 255, 0.2);
+    /* opacity: 0.2; */
+    width: 20em;
+    height: 10em;
+    position: absolute;
+    top: 40em;
+    left: 50em;
+    
+}
+
+.bulb >img{
+    display: flex;
+    justify-content: center;
+    width: 2em;
+    height: auto;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.bulbline{
+    position: absolute;
+    border-bottom: #e4cfcf;
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 4em;
+    margin-left: 20em;
+    top: 4em;
+
+}
+
+.bulbcircle{
+    position: absolute;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+    right: -5em;
+    top: 3.65em;
+    
+}
+
+@media screen and (max-width: 960px) {
+    body{
+    background-position: center center;
+    background-attachment: fixed;
+        
+    }
+    .hero-section{
+        flex-direction: column;
+    }
+
+    .nav-items{
+        display: none;
+    }
+    .phone-logo{
+        margin-top: 2px;
+
+        
+    }
+    .hr-line{
+        left: .5em;
+        right: .5em;
+        width: auto;
+    }
+    .section1{
+        display: flex;
+        margin-top: 1em;
+        width: 70vw;
+
+    }
+    .section1 > h1{
+        font-size: 70px;
+    }
+.btn-learnMore{
+    font-size: 20px;
+    margin-top: 1em;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    right: 2em;
+    margin-top: 1em;
+}
+.puzzleline{
+    margin-top: 10em
+}
+.puzzlecircle{
+    margin-top: 14em ;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    left: 4em;
+    margin-top: 12em;
+    bottom: 5em;
+  
+}
+.nav-menu-icon{
+    display: flex;
+    font-size: 40px;
+   
+}
+
+}
